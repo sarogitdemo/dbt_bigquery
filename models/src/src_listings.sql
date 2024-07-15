@@ -11,5 +11,5 @@ SELECT
  price AS price_str,
  created_at,
  updated_at
-FROM
+FROM 
  raw_listings
