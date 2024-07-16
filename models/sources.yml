@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: bigquery
+    schema: source
+    tables:
+      - name: raw_listings
+      - name: raw_hosts
+      - name: raw_reviews
+     
