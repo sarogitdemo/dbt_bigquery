@@ -1,5 +1,5 @@
 with raw_listings as (
-  select * from `source.raw_listings`
+  select * from {{source("bigquery",'listings')}}
 )
 SELECT
  id AS listing_id,
