@@ -1,6 +1,6 @@
 WITH src_reviews as (
 
-SELECT * from source.raw_reviews 
+SELECT * from {{source("bigquery",'reviews')}} 
 
 )
 select listing_id,

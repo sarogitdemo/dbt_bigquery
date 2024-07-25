@@ -3,7 +3,19 @@ sources:
   - name: bigquery
     schema: source
     tables:
-      - name: raw_listings
-      - name: raw_hosts
-      - name: raw_reviews
+      - name: listings
+        identifier: raw_listings
+      - name: hosts
+        identifier: raw_hosts
+      - name: reviews
+        identifier: raw_reviews
+        loaded_at_field: date
+        freshness: 
+          error_after:
+            count: 1200
+            period: day
+          warn_after:
+            count: 1
+            period: hour
+        
      
